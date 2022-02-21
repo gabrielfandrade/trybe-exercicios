@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Camila Ranniele](https://www.linkedin.com/in/camila-ranniele-a7b955211/) enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Gabriel Faustino de Andrade](https://www.linkedin.com/in/gabriel-faustino-657bb313b/) enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀
 
 *"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."*
 
@@ -14,7 +14,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 **Bloco 2: Git & GitHub**
 - [x] 2-1: O que é e para que serve?
 - [x] 2-2: Entendendo os comandos
-- [x] 2-3: Internet - Entendendo como ela funciona
+- [ ] 2-3: Internet - Entendendo como ela funciona
 
 **Bloco 3: Bloco 3: Introdução - HTML & CSS**
 - [ ] 3-1: Introdução à HTML & CSS e estrutura de páginas 
