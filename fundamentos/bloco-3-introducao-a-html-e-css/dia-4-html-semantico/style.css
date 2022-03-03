@@ -11,8 +11,5 @@ nav li {
 }
 
 .olhos-article img {
-    width: 25%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 20% 10%;
+    width: 18%;
 }
