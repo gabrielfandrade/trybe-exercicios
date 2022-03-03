@@ -1,0 +1,15 @@
+* {
+    margin-left: 5px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.info-article img {
+    width: 35%;
+}
+
+.olhos-article img {
+    width: 18%;
+}
