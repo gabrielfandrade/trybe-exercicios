@@ -14,8 +14,14 @@
 
 // console.log(menu);
 
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+// let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-for (let index = 0; index < groceryList.length; index++) {
-    console.log(groceryList[index]);
+// for (let index = 0; index < groceryList.length; index++) {
+//     console.log(groceryList[index]);
+// }
+
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for (const name of names) {
+    console.log(name);
 }
