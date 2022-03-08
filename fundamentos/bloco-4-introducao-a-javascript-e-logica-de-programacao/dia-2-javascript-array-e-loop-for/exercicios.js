@@ -58,4 +58,8 @@ for (let index = 1; index <= 25; index++) {
     numeros.push(index);
 }
 
-console.log(numeros);
+// console.log(numeros);
+
+for (const numero of numeros) {
+    console.log(numero / 2);
+}
