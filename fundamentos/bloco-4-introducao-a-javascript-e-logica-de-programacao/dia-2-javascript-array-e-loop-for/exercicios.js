@@ -18,12 +18,26 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //     console.log("valor menor ou igual a 20");
 // }
 
-let maiorNumero = 0;
+// let maiorNumero = 0;
 
-for (let number of numbers) {
-    if (number > maiorNumero) {
-        maiorNumero = number;
+// for (let number of numbers) {
+//     if (number > maiorNumero) {
+//         maiorNumero = number;
+//     }
+// }
+
+// console.log(maiorNumero);
+
+let impares = 0;
+
+for (const number of numbers) {
+    if (number % 2 !== 0) {
+        impares++;
     }
 }
 
-console.log(maiorNumero);
+if (impares == 0) {
+    console.log("nenhum valor ímpar encontrado");
+} else {
+    console.log(impares);
+}
