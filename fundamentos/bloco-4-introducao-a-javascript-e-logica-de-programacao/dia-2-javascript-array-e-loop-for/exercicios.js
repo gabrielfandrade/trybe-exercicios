@@ -8,4 +8,6 @@ for (const number of numbers) {
     soma += number;
 }
 
-console.log(soma);
+// console.log(soma);
+
+console.log(soma / numbers.length);
