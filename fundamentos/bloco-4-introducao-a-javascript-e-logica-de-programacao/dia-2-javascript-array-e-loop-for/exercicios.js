@@ -28,16 +28,26 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // console.log(maiorNumero);
 
-let impares = 0;
+// let impares = 0;
 
-for (const number of numbers) {
-    if (number % 2 !== 0) {
-        impares++;
+// for (const number of numbers) {
+//     if (number % 2 !== 0) {
+//         impares++;
+//     }
+// }
+
+// if (impares == 0) {
+//     console.log("nenhum valor ímpar encontrado");
+// } else {
+//     console.log(impares);
+// }
+
+let menorNumero = numbers[0];
+
+for (let index = 1; index < numbers.length; index++) {
+    if (numbers[index] < menorNumero) {
+        menorNumero = numbers[index];
     }
 }
 
-if (impares == 0) {
-    console.log("nenhum valor ímpar encontrado");
-} else {
-    console.log(impares);
-}
+console.log(menorNumero);
