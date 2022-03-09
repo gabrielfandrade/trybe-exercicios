@@ -1,11 +1,21 @@
-let n = 3;
+ let n = 3;
 
-let as = "";
+// Exercício 1
+// let as = "";
 
-for (let i = 0; i < n; i += 1) {
-    as += "*";
-}
+// for (let i = 0; i < n; i += 1) {
+//     as += "*";
+// }
 
-for (let i = 1; i <= n; i += 1) {
+// for (let i = 1; i <= n; i += 1) {
+//     console.log(as);
+// }
+
+// Exercício 2
+for (let i = 0; i <= n; i += 1) {
+    let as = "";
+    for (let x = 0; x < i; x += 1) {
+        as += "*";
+    }
     console.log(as);
 }
