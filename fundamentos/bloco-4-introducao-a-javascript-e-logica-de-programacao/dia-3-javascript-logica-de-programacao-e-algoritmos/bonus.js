@@ -1,4 +1,4 @@
- let n = 3;
+let n = 3;
 
 // Exercício 1
 // let as = "";
@@ -12,8 +12,20 @@
 // }
 
 // Exercício 2
+// for (let i = 0; i <= n; i += 1) {
+//     let as = "";
+//     for (let x = 0; x < i; x += 1) {
+//         as += "*";
+//     }
+//     console.log(as);
+// }
+
+// Exercício 3
 for (let i = 0; i <= n; i += 1) {
     let as = "";
+    for (let z = n; z > i; z -= 1) {
+        as += " ";
+    }
     for (let x = 0; x < i; x += 1) {
         as += "*";
     }
