@@ -23,12 +23,36 @@
 4 - Adicionar cada letra da palavra a ser invertida para a segunda variável
 */
 
-let word = "tryber";
+// let word = "tryber";
 
-let invertedWord = "";
+// let invertedWord = "";
 
-for (let i = word.length - 1; i >= 0; i -= 1) {
-    invertedWord += word[i];
+// for (let i = word.length - 1; i >= 0; i -= 1) {
+//     invertedWord += word[i];
+// }
+
+// console.log(invertedWord);
+
+/* 
+1 - Criar array de palavras
+2 - Criar variável para armazenar a maior palavra
+3 - Criar variável para armazenar a menor palavra
+4 - Criar um loop que percorra o Array
+5 - Verificar se a palavra é maior/menor que a armazenada
+*/
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+let maior = array[0];
+let menor = array[0];
+
+for (let i = 1; i < array.length; i += 1) {
+    if (maior.length < array[i].length) {
+        maior = array[i];
+    }
+    if (menor.length > array[i].length) {
+        menor = array[i];
+    }
 }
 
-console.log(invertedWord);
+console.log("Maior Palavra: ", maior, "; Menor Palavra: ", menor);
