@@ -41,18 +41,41 @@
 5 - Verificar se a palavra é maior/menor que a armazenada
 */
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
 
-let maior = array[0];
-let menor = array[0];
+// let maior = array[0];
+// let menor = array[0];
 
-for (let i = 1; i < array.length; i += 1) {
-    if (maior.length < array[i].length) {
-        maior = array[i];
+// for (let i = 1; i < array.length; i += 1) {
+//     if (maior.length < array[i].length) {
+//         maior = array[i];
+//     }
+//     if (menor.length > array[i].length) {
+//         menor = array[i];
+//     }
+// }
+
+// console.log("Maior Palavra: ", maior, "; Menor Palavra: ", menor);
+
+/*
+ 1 - Criar uma variável com valor 0
+ 2 - Criar um loop que percorra do numero 0 ao 50
+ 3 - Criar um If com a condição que o valor do index seja apenas divisivo por ele mesmo
+ 4 - Armazenar o maior valor na variável
+ */
+
+ let maior = 0;
+
+ for (let i = 0; i <= 50; i++) {
+     let naoPrimo = true;
+    for (let z = 2; z < i; z++) {
+        if (i % z === 0) {
+            naoPrimo = false;
+        }
     }
-    if (menor.length > array[i].length) {
-        menor = array[i];
+    if (naoPrimo) {
+        maior = i;
     }
-}
+ }
 
-console.log("Maior Palavra: ", maior, "; Menor Palavra: ", menor);
+ console.log(maior);
