@@ -32,3 +32,15 @@ let n = 5;
 //     console.log(as);
 // }
 
+
+for (let i = n; i >= 1; i -= 2) {
+    let esp = "";
+    let as = "";
+    for (let x = 1; x < i; x += 2) {
+        esp += " ";
+    }
+    for (let y = n; y >= i; y -= 1) {
+        as += "*";
+    }
+    console.log(esp + as + esp);
+}
