@@ -75,4 +75,4 @@ function finalPalavra(word, ending) {
     return word.endsWith(ending);
 }
 
-console.log(finalPalavra('trybe', 'a'));
+console.log(finalPalavra('trybe', 'be'));
