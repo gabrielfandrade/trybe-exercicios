@@ -1,3 +1,5 @@
+
+/** Source: https://stackoverflow.com/questions/49659711/roman-to-integer-in-js-why-it-only-convert-the-first-character */
 const roman = new Map([
     ['I', 1],
     ['V', 5],
