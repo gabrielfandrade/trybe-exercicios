@@ -7,4 +7,8 @@ let info = {
 
 //   console.log('Bem-vinda,', info['personagem']);
 
-console.log(info);
+// console.log(info);
+
+for (const key in info) {
+    console.log(key);
+}
