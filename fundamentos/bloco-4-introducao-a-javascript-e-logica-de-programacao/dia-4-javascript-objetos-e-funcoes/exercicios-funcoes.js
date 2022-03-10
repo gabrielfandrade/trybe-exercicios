@@ -20,14 +20,26 @@
 
 // console.log(maiorNumero([2, 3, 6, 7, 10, 1]));
 
-function menorNumero(numList) {
-    let menor = numList[0];
-    for (let number of numList) {
-        if (number < menor) {
-            menor = number;
+// function menorNumero(numList) {
+//     let menor = numList[0];
+//     for (let number of numList) {
+//         if (number < menor) {
+//             menor = number;
+//         }
+//     }
+//     return menor;
+// }
+
+// console.log(menorNumero([2, 4, 6, 7, 10, 0, -3]));
+
+function maiorNome(strList) {
+    let str = '';
+    for (let nome of strList) {
+        if (nome.length > str.length) {
+            str = nome;
         }
     }
-    return menor;
+    return str;
 }
 
-console.log(menorNumero([2, 4, 6, 7, 10, 0, -3]));
+console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
