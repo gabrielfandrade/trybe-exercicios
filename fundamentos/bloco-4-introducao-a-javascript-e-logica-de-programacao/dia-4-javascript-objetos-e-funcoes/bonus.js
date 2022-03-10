@@ -105,14 +105,22 @@ let moradores = {
     ],
   };
 
-  function ultimoMorador(moradores) {
-      let ultimo = {};
-      for (const morador of moradores.blocoDois) {
-          ultimo = morador;
-      }
-      return ultimo;
-  }
+//   function ultimoMorador(moradores) {
+//       let ultimo = {};
+//       for (const morador of moradores.blocoDois) {
+//           ultimo = morador;
+//       }
+//       return ultimo;
+//   }
 
-  let ultimo = ultimoMorador(moradores);
+//   let ultimo = ultimoMorador(moradores);
 
-  console.log('O morador do bloco 2 de nome ', ultimo.nome, 'mora no', ultimo.andar, 'andar, apartamento', ultimo.apartamento);
+//   console.log('O morador do bloco 2 de nome ', ultimo.nome, ultimo.sobrenome, 'mora no', ultimo.andar, 'andar, apartamento', ultimo.apartamento);
+
+for (const morador of moradores.blocoUm) {
+    console.log(morador.nome, morador.sobrenome);
+}
+
+for (const morador of moradores.blocoDois) {
+    console.log(morador.nome, morador.sobrenome);
+}
