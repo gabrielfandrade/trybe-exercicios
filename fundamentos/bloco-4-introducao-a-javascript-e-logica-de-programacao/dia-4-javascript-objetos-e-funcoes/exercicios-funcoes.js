@@ -32,14 +32,31 @@
 
 // console.log(menorNumero([2, 4, 6, 7, 10, 0, -3]));
 
-function maiorNome(strList) {
-    let str = '';
-    for (let nome of strList) {
-        if (nome.length > str.length) {
-            str = nome;
+// function maiorNome(strList) {
+//     let str = '';
+//     for (let nome of strList) {
+//         if (nome.length > str.length) {
+//             str = nome;
+//         }
+//     }
+//     return str;
+// }
+
+// console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function maisRepete(numList) {
+    let numListSort = numList.sort();
+    let vezes = {};
+    let repeat = 0;
+    let num;
+    for (const key in numListSort) {
+        vezes[numListSort[key]] = (vezes[numListSort[key]] || 0) + 1;
+        if (vezes[numListSort[key]] > repeat) {
+            repeat = vezes[numListSort[key]];
+            num = numListSort[key];
         }
     }
-    return str;
+    return num;
 }
 
-console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(maisRepete([2, 3, 2, 5, 8, 3, 3]));
