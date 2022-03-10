@@ -44,19 +44,29 @@
 
 // console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-function maisRepete(numList) {
-    let numListSort = numList.sort();
-    let vezes = {};
-    let repeat = 0;
-    let num;
-    for (const key in numListSort) {
-        vezes[numListSort[key]] = (vezes[numListSort[key]] || 0) + 1;
-        if (vezes[numListSort[key]] > repeat) {
-            repeat = vezes[numListSort[key]];
-            num = numListSort[key];
-        }
+// function maisRepete(numList) {
+//     let numListSort = numList.sort();
+//     let vezes = {};
+//     let repeat = 0;
+//     let num;
+//     for (const key in numListSort) {
+//         vezes[numListSort[key]] = (vezes[numListSort[key]] || 0) + 1;
+//         if (vezes[numListSort[key]] > repeat) {
+//             repeat = vezes[numListSort[key]];
+//             num = numListSort[key];
+//         }
+//     }
+//     return num;
+// }
+
+// console.log(maisRepete([2, 3, 2, 5, 8, 3, 3]));
+
+function somatorio(num) {
+    let soma = 0;
+    for (let i = num; i > 0; i -= 1) {
+        soma += i;      
     }
-    return num;
+    return soma;
 }
 
-console.log(maisRepete([2, 3, 2, 5, 8, 3, 3]));
+console.log(somatorio(5));
