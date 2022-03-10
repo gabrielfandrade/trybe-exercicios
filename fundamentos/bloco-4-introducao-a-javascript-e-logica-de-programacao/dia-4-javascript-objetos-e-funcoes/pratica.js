@@ -22,12 +22,24 @@
 //     console.log('Olá', names[key]);
 // }
 
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
+// let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
 
-  for (const key in car) {
-      console.log(key);
-  }
+//   for (const key in car) {
+//       console.log(key);
+//   }
+
+function maiorNumero(num1, num2){
+    if (num1 > num2) {
+        console.log(num1, 'é o maior numero');
+    } else if (num1 < num2) {
+        console.log(num2, 'é o maior numero');
+    } else {
+        console.log('Os dois números são iguais');
+    }
+}
+
+maiorNumero(3,3);
