@@ -61,12 +61,18 @@
 
 // console.log(maisRepete([2, 3, 2, 5, 8, 3, 3]));
 
-function somatorio(num) {
-    let soma = 0;
-    for (let i = num; i > 0; i -= 1) {
-        soma += i;      
-    }
-    return soma;
+// function somatorio(num) {
+//     let soma = 0;
+//     for (let i = num; i > 0; i -= 1) {
+//         soma += i;      
+//     }
+//     return soma;
+// }
+
+// console.log(somatorio(5));
+
+function finalPalavra(word, ending) {
+    return word.endsWith(ending);
 }
 
-console.log(somatorio(5));
+console.log(finalPalavra('trybe', 'a'));
