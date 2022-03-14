@@ -92,6 +92,15 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
   }
   toUp();
 
+  //Exercício 6
+  function logP() {
+    let p = document.getElementsByTagName("p");
+    for (let i = 0; i < p.length; i++) {
+      console.log(p[i].innerHTML);
+    }
+  }
+  logP();
+
   </script>
 </body>
 
