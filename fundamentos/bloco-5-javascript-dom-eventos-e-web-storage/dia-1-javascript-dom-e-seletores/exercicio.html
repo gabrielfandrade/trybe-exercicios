@@ -62,18 +62,28 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     let paragraph = document.getElementsByTagName("p")[1];
     paragraph.innerHTML = "Trabalhar ganhando 4000+";
   }
+  changeText();
 
   //Exercício 2
   function changeToGreenTrybe() {
     let box = document.getElementsByClassName("main-content")[0];
     box.style.background = "rgb(76,164,109)";
   }
+  changeToGreenTrybe();
 
   //Exercício 3
   function changeToWhite() {
     let box = document.getElementsByClassName("center-content")[0];
     box.style.background = "white";
   }
+  changeToWhite();
+
+  //Exercício 4
+  function correcao() {
+    let text = document.getElementsByClassName("title")[0];
+    text.innerHTML = "Exercício 5.1 - JavaScript"
+  }
+  correcao();
 
   </script>
 </body>
