@@ -59,8 +59,8 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
   //Exercício 1
   function changeText(){
-    let paragraph = document.getElementsByTagName("p")[1];
-    paragraph.innerHTML = "Trabalhar ganhando 4000+";
+    let text = document.getElementsByTagName("p")[1];
+    text.innerHTML = "Trabalhar ganhando 4000+";
   }
   changeText();
 
@@ -84,6 +84,13 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     text.innerHTML = "Exercício 5.1 - JavaScript"
   }
   correcao();
+
+  //Exercício 5
+  function toUp() {
+    let text = document.getElementsByTagName("p")[0];
+    text.style.textTransform = "uppercase";
+  }
+  toUp();
 
   </script>
 </body>
