@@ -23,13 +23,21 @@
   </main>
   <script>
     let element = document.querySelector('#elementoOndeVoceEsta');
-    element.parentElement.style.color = 'red';
-    document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Teste';
-    let firstChild = document.querySelector('#pai').firstElementChild;
-    let acess = element.previousElementSibling;
-    let atencao = element.parentElement.innerText;
-    let thirdChild = element.nextElementSibling;
-    thirdChild = document.querySelector('#pai').lastElementChild.previousElementSibling;
+    // element.parentElement.style.color = 'red';
+    // document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Teste';
+    // let firstChild = document.querySelector('#pai').firstElementChild;
+    // let acess = element.previousElementSibling;
+    // let atencao = element.parentElement.innerText;
+    // let thirdChild = element.nextElementSibling;
+    // thirdChild = document.querySelector('#pai').lastElementChild.previousElementSibling;
+    let irmao = document.createElement('section');
+    element.parentElement.appendChild(irmao);
+    let filho = document.createElement('section');
+    element.appendChild(filho);
+    let filhoPrimeiro = document.createElement('section')
+    document.querySelector('#primeiroFilhoDoFilho').appendChild(filhoPrimeiro);
+    filhoPrimeiro = document.querySelector('#primeiroFilhoDoFilho').firstElementChild;
+    let terceiroFilho = filhoPrimeiro.parentElement.parentElement.nextElementSibling;
   </script>
 </body>
 
