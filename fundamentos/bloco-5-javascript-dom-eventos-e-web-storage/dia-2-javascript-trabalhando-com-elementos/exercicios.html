@@ -92,6 +92,16 @@
       img.src = 'https://picsum.photos/200';
       img.className = 'small-image';
       document.querySelector('.left-content').appendChild(img);
+
+      //Exercício 8
+      let nums = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez'];
+      let ul = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(ul);
+      for (const num of nums) {
+        let li = document.createElement('li');
+        li.innerText = num;
+        document.querySelector('.right-content ul').appendChild(li);
+      }
     </script>
   </body>
 </html>
