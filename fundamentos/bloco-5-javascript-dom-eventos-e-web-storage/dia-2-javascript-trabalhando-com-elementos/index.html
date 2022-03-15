@@ -30,14 +30,23 @@
     // let atencao = element.parentElement.innerText;
     // let thirdChild = element.nextElementSibling;
     // thirdChild = document.querySelector('#pai').lastElementChild.previousElementSibling;
-    let irmao = document.createElement('section');
-    element.parentElement.appendChild(irmao);
-    let filho = document.createElement('section');
-    element.appendChild(filho);
-    let filhoPrimeiro = document.createElement('section')
-    document.querySelector('#primeiroFilhoDoFilho').appendChild(filhoPrimeiro);
-    filhoPrimeiro = document.querySelector('#primeiroFilhoDoFilho').firstElementChild;
-    let terceiroFilho = filhoPrimeiro.parentElement.parentElement.nextElementSibling;
+    // let irmao = document.createElement('section');
+    // element.parentElement.appendChild(irmao);
+    // let filho = document.createElement('section');
+    // element.appendChild(filho);
+    // let filhoPrimeiro = document.createElement('section')
+    // document.querySelector('#primeiroFilhoDoFilho').appendChild(filhoPrimeiro);
+    // filhoPrimeiro = document.querySelector('#primeiroFilhoDoFilho').firstElementChild;
+    // let terceiroFilho = filhoPrimeiro.parentElement.parentElement.nextElementSibling;
+    let pai = document.getElementById('pai');
+    for (let i = pai.childNodes.length - 1; i >= 0; i -= 1) {
+      let filho = pai.childNodes[i];
+      if (filho.id !== 'elementoOndeVoceEsta') {
+        filho.remove();
+      }
+    }
+    let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
   </script>
 </body>
 
