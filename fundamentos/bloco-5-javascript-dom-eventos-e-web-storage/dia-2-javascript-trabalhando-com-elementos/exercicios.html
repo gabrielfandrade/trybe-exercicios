@@ -100,9 +100,11 @@
       let ul = document.createElement('ul');
       document.querySelector('.right-content').appendChild(ul);
       for (const num of nums) {
-        let li = document.createElement('li');
-        li.innerText = num;
-        document.querySelector('.right-content ul').appendChild(li);
+        if (num !== 'nove' && num !== 'dez') {
+          let li = document.createElement('li');
+          li.innerText = num;
+          document.querySelector('.right-content ul').appendChild(li);
+        }
       }
 
       //Exercício 9
