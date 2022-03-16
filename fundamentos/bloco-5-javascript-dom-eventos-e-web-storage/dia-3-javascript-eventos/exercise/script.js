@@ -34,3 +34,11 @@ function days() {
   }
 
   days();
+
+  //Exercício 2
+  function fridays(Feriados) {
+    let button = document.createElement('button');
+    button.classList.add('btn-holiday');
+    let div = document.querySelector('.buttons-container');
+    div.appendChild(button);
+  }
