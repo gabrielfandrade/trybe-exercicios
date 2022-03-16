@@ -63,3 +63,14 @@ function days() {
   }
 
   showHolidays();
+
+  //Exercício 4
+  function fridays(name) {
+    let button = document.createElement('button');
+    button.id = 'btn-friday';
+    button.innerHTML = name;
+    let div = document.querySelector('.buttons-container');
+    div.appendChild(button);
+  }
+
+  fridays('Sexta-feira');
