@@ -122,3 +122,10 @@ function days() {
     span.innerText = tarefa;
     document.querySelector('.my-tasks').appendChild(span);
   }
+
+  //Exercício 8
+  function corTarefa(cor) {
+    let div = document.createElement('div');
+    div.classList.add('task');
+    document.querySelector('.my-tasks').appendChild(div);
+  }
