@@ -129,3 +129,18 @@ function days() {
     div.classList.add('task');
     document.querySelector('.my-tasks').appendChild(div);
   }
+
+  //Exercício 9
+  function selectTarefa() {
+    let tarefas = document.querySelectorAll('.task');
+
+    tarefas.addEventListener('click', function (event) {
+      if (event.target.classList.contains('selected')) {
+        event.target.classList.remove('selected');
+      } else {
+        event.target.classList.add('selected');
+      }
+    })
+  }
+
+  selectTarefa();
