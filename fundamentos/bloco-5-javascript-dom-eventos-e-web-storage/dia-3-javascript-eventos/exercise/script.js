@@ -74,3 +74,22 @@ function days() {
   }
 
   fridays('Sexta-feira');
+
+  //Exercício 5
+  function showFridays(fridaysList) {
+    let getFridayButton = document.querySelector('#btn-friday');
+    let getFridays = document.querySelectorAll('.friday');
+
+    getFridayButton.addEventListener('click', function() {
+      for (let index = 0; index < getFridays.length; index += 1) {
+        if (getFridays[index].innerHTML !== 'Sexta-Feira') {
+          getFridays[index].innerHTML = 'Sexta-Feira';
+        } else {
+          getFridays[index].innerHTML = fridaysList[index];
+          }
+        }
+    })
+  }
+
+  let fridaysList = [ 4, 11, 18, 25 ];
+  showFridays(fridaysList);
