@@ -36,9 +36,30 @@ function days() {
   days();
 
   //Exercício 2
-  function fridays(Feriados) {
+  function holidays(name) {
     let button = document.createElement('button');
-    button.classList.add('btn-holiday');
+    button.id = 'btn-holiday';
+    button.innerHTML = name;
     let div = document.querySelector('.buttons-container');
     div.appendChild(button);
   }
+
+  holidays('Feriados');
+
+  //Exercício 3
+  function showHolidays() {
+    let getHolidayButton = document.querySelector('#btn-holiday');
+    let getHolidays = document.querySelectorAll('.holiday');
+
+    getHolidayButton.addEventListener('click', function() {
+      for (let index = 0; index < getHolidays.length; index += 1) {
+        if (getHolidays[index].style.backgroundColor === 'aqua') {
+          getHolidays[index].style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+          getHolidays[index].style.backgroundColor = 'aqua';
+        }
+      }
+    })
+  }
+
+  showHolidays();
