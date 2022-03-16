@@ -115,3 +115,10 @@ function days() {
 
   zoomOn();
   zoomOut();
+
+  //Exercício 7
+  function spanTarefa(tarefa){
+    let span = document.createElement('span');
+    span.innerText = tarefa;
+    document.querySelector('.my-tasks').appendChild(span);
+  }
