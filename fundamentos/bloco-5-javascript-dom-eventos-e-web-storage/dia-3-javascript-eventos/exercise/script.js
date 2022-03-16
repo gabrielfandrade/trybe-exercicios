@@ -93,3 +93,25 @@ function days() {
 
   let fridaysList = [ 4, 11, 18, 25 ];
   showFridays(fridaysList);
+
+  //Exercício 6
+  function zoomOn() {
+    let daysZoom = document.querySelector('#days');
+
+    daysZoom.addEventListener('mouseover', function (event) {
+      event.target.style.fontSize = '25px';
+      event.target.style.fontWeight = '600';
+    })
+  }
+
+  function zoomOut() {
+    let daysZoom = document.querySelector('#days');
+
+    daysZoom.addEventListener('mouseout', function (event) {
+      event.target.style.fontWeight = '250';
+      event.target.style.fontSize = '20px';
+    })
+  }
+
+  zoomOn();
+  zoomOut();
