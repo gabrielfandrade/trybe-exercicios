@@ -37,8 +37,20 @@ input.addEventListener('keyup', nameTech);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', function(event){
+    window.location.replace('https://gabrielfandrade.github.io/');
+});
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+myWebpage.addEventListener('mouseover', function(event) {
+    event.target.style.color = 'red';
+})
+
+myWebpage.addEventListener('mouseout', function(event) {
+    event.target.style.color = 'unset';
+  });
 
 // Segue abaixo um exemplo do uso de event.target:
 
