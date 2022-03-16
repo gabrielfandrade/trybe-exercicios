@@ -127,6 +127,7 @@ function days() {
   function corTarefa(cor) {
     let div = document.createElement('div');
     div.classList.add('task');
+    div.style.backgroundColor = cor;
     document.querySelector('.my-tasks').appendChild(div);
   }
 
@@ -144,3 +145,17 @@ function days() {
   }
 
   selectTarefa();
+
+  //Exercício 10
+  function dayClick() {
+    let diasTarefas = document.querySelector('#days');
+
+    diasTarefas.addEventListener('click', function(event) {
+      let cor = document.querySelector('.selected').style.backgroundColor;
+      if (event.target.style.color === cor) {
+        event.target.style.color = 'rgb(119,119,119)';
+      } else {
+        event.target.style.color = cor;
+      }
+    })
+  }
