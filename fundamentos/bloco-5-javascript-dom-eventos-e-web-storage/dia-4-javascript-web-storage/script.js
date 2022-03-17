@@ -27,3 +27,36 @@ function lineHeight(height) {
     }
     localStorage.setItem('lineheight', height);
 }
+
+function fontFamily(font) {
+    let text = document.querySelectorAll('p');
+    for (const key in text) {
+        text[key].style.fontFamily = font;
+    }
+    localStorage.setItem('fontfamily', font);
+}
+
+
+
+function iniciar() {
+    let backgroundColor = localStorage.getItem("bgcolor");
+    if (backgroundColor) {
+        bgColor(backgroundColor);
+    }
+
+    let fontColor = localStorage.getItem("txtcolor");
+    if (fontColor) {
+        textColor(fontColor);
+    }
+
+    let fontSize = localStorage.getItem("txtsize");
+    if (fontSize) fontSize(fontSize);
+
+    let lineHeight = localStorage.getItem("lineheight")
+    if (lineHeight) lineHeight(lineHeight)
+
+    let fontFamily = localStorage.getItem("fontfamily")
+    if (fontFamily) fontFamily(fontFamily)
+}
+
+iniciar();
