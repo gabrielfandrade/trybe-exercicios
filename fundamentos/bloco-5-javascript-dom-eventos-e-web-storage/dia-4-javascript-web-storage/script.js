@@ -36,7 +36,7 @@ function fontFamily(font) {
     localStorage.setItem('fontfamily', font);
 }
 
- let backgroundColorSelect = document.querySelector("#bgcolor")
+ let backgroundColorSelect = document.querySelector("#selected-background-color");
     backgroundColorSelect.addEventListener('change', function () {
         bgColor(backgroundColorSelect.selectedOptions[0].value);
     })
