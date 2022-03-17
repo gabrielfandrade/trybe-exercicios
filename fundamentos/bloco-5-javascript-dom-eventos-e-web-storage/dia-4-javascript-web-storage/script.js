@@ -36,7 +36,38 @@ function fontFamily(font) {
     localStorage.setItem('fontfamily', font);
 }
 
+ let backgroundColorSelect = document.querySelector("#bgcolor")
+    backgroundColorSelect.addEventListener('change', function () {
+        bgColor(backgroundColorSelect.selectedOptions[0].value);
+    })
 
+ let fontColorButtons = document.querySelectorAll("#font-color>button")
+ for (let index = 0; index < fontColorButtons.length; index += 1) {
+   fontColorButtons[index].addEventListener("click", function(event) {
+    textColor(event.target.innerHTML)
+   })
+ }
+
+ let fontSizeButtons = document.querySelectorAll("#font-size>button")
+ for (let index = 0; index < fontSizeButtons.length; index += 1) {
+   fontSizeButtons[index].addEventListener("click", function(event) {
+    fontSize(event.target.innerHTML)
+   })
+ }
+
+ let lineHeightButtons = document.querySelectorAll("#line-height>button")
+ for (let index = 0; index < lineHeightButtons.length; index += 1) {
+   lineHeightButtons[index].addEventListener("click", function(event) {
+    lineHeight(event.target.innerHTML)
+   })
+ }
+
+ let fontFamilyButtons = document.querySelectorAll("#font-family>button")
+ for (let index = 0; index < fontFamilyButtons.length; index += 1) {
+   fontFamilyButtons[index].addEventListener("click", function(event) {
+    fontFamily(event.target.innerHTML)
+   })
+ }
 
 function iniciar() {
     let backgroundColor = localStorage.getItem("bgcolor");
