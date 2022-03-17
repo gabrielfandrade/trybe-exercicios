@@ -36,38 +36,30 @@ function fontFamily(font) {
     localStorage.setItem('fontfamily', font);
 }
 
- let backgroundColorSelect = document.querySelector("#selected-background-color");
-    backgroundColorSelect.addEventListener('change', function () {
-        bgColor(backgroundColorSelect.selectedOptions[0].value);
-    })
+let backgroundColorSelect = document.querySelector("#selected-background-color");
+backgroundColorSelect.addEventListener('change', function () {
+    bgColor(backgroundColorSelect.selectedOptions[0].value);
+})
 
- let fontColorButtons = document.querySelectorAll("#font-color>button")
- for (let index = 0; index < fontColorButtons.length; index += 1) {
-   fontColorButtons[index].addEventListener("click", function(event) {
-    textColor(event.target.innerHTML)
-   })
- }
+let fontColorSelect = document.querySelector("#selected-font-color")
+fontColorSelect.addEventListener('change', function () {
+    textColor(fontColorSelect.selectedOptions[0].value);
+})
 
- let fontSizeButtons = document.querySelectorAll("#font-size>button")
- for (let index = 0; index < fontSizeButtons.length; index += 1) {
-   fontSizeButtons[index].addEventListener("click", function(event) {
-    fontSize(event.target.innerHTML)
-   })
- }
+let fontSizeSelect = document.querySelector("#selected-font-size")
+fontSizeSelect.addEventListener('change', function () {
+    fontSize(fontSizeSelect.selectedOptions[0].value);
+})
 
- let lineHeightButtons = document.querySelectorAll("#line-height>button")
- for (let index = 0; index < lineHeightButtons.length; index += 1) {
-   lineHeightButtons[index].addEventListener("click", function(event) {
-    lineHeight(event.target.innerHTML)
-   })
- }
+let lineHeightSelect = document.querySelector("#selected-line-height")
+lineHeightSelect.addEventListener('change', function () {
+    lineHeight(lineHeightSelect.selectedOptions[0].value);
+})
 
- let fontFamilyButtons = document.querySelectorAll("#font-family>button")
- for (let index = 0; index < fontFamilyButtons.length; index += 1) {
-   fontFamilyButtons[index].addEventListener("click", function(event) {
-    fontFamily(event.target.innerHTML)
-   })
- }
+let fontFamilySelect = document.querySelector("#selected-font-family")
+fontFamilySelect.addEventListener('change', function () {
+    fontFamily(fontFamilySelect.selectedOptions[0].value);
+})
 
 function iniciar() {
     let backgroundColor = localStorage.getItem("bgcolor");
