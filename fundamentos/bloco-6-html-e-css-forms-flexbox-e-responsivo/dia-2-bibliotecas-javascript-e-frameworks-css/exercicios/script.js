@@ -58,7 +58,14 @@ function enableSubmit() {
   submitBtn.disabled = !agreement.checked;
 }
 
+function disabled() {
+  const submitBtn = document.querySelector('#form-button');
+  submitBtn.disabled = true;
+}
+
 window.onload = function () {
   const agreement = document.querySelector('#input-termo');
   agreement.addEventListener('change', enableSubmit);
+  const reset = document.querySelector('#form-reset');
+  reset.addEventListener('click', disabled);
 };
