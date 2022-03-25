@@ -1,42 +1,64 @@
-const submit = document.querySelector('#form-button');
-const checkFoto = document.querySelector('#input-termo');
-const form = document.querySelector('#form');
-
-function validacao() {
-  const email = document.querySelector('#input-email').value.length;
-  const invalidEmail = email < 10 || email > 50;
-
-  const name = document.querySelector('#input-nome').value.length;
-  const invalidName = name < 10 || name > 40;
-
-  const reason = document.querySelector('#input-texto').value.length;
-  const invalidReason = reason > 500;
-
-  if (invalidEmail || invalidName || invalidReason) {
-    return false;
-  }
-  else {
-    return true;
-  }
-}
-
-submit.addEventListener('click', function (event) {
-  event.preventDefault();
-  const validar = validacao();
-  if (validar === false) {
-    alert('Dados inválidos');
-  } else {
-    alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
-  }
+const form = new JustValidate('#form', {
+  errorFieldCssClass: 'is-invalid',
+  errorFieldStyle: {
+    border: '1px solid red',
+  },
+  errorLabelCssClass: 'is-label-invalid',
+  errorLabelStyle: {
+    color: 'red',
+    textDecoration: 'underlined',
+  },
+  focusInvalidField: true,
+  lockForm: true,
+  tooltip: {
+    position: 'top',
+  },
 });
 
-function verificarChecked() {
-  submit.disabled = !checkFoto.checked;
+form
+  .addField('#input-nome', [
+    {
+      rule: 'required',
+      errorMessage: 'O campo de nome é obrigatório.',
+    },
+    {
+      rule: 'minLength',
+      value: 10,
+      errorMessage: 'Nome deve ter 10 caracteres no mínimo',
+    },
+    {
+      rule: 'maxLength',
+      value: 40,
+      errorMessage: 'O limite é de 40 caracteres.',
+    }
+  ])
+  .addField('#input-email', [
+    {
+      rule: 'minLength',
+      value: 10,
+    },
+    {
+      rule: 'maxLength',
+      value: 50,
+      errorMessage: 'O limite é de 50 caracteres.',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'O email digitado não é válido.',
+    },
+  ])
+  .addRequiredGroup(
+    '#input-termo',
+    'Campo obrigatório'
+  )
+
+function enableSubmit() {
+  const submitBtn = document.querySelector('#form-button');
+  const agreement = document.querySelector('#input-termo');
+  submitBtn.disabled = !agreement.checked;
 }
 
-window.onload = function() {
-  submit.addEventListener('click', function (event) {
-    event.preventDefault();
-  });
-  checkFoto.addEventListener('change', verificarChecked);
+window.onload = function () {
+  const agreement = document.querySelector('#input-termo');
+  agreement.addEventListener('change', enableSubmit);
 };
