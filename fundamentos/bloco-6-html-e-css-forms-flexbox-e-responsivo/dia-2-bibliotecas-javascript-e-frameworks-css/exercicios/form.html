@@ -11,36 +11,47 @@
 </head>
 
 <body>
-  <header>
+  <header class="container text-center">
     <h1 class="display-1">TrybeTrip</h1>
   </header>
   <section>
-    <form id="form"  autocomplete="off">
-      <div class="mb-3">
-        <label class="form-label" for="input-nome">Nome:</label>
-        <input class="form-control" type="text" id="input-nome" name="nome">
+    <form id="form" autocomplete="off" class="container shadow p-3 mb-5 bg-body rounded">
+      <div class="row g-2">
+        <div class="mb-3 col-md">
+          <label class="form-label" for="input-nome">Nome:</label>
+          <input class="form-control" type="text" id="input-nome" name="nome">
+        </div>
+        <div class="mb-3 col-md">
+          <label class="form-label" for="input-email">E-mail:</label>
+          <input class="form-control" type="email" name="email" id="input-email">
+        </div>
       </div>
       <div class="mb-3">
-        <label class="form-label" for="input-email">E-mail:</label>
-        <input class="form-control" type="email" name="email" id="input-email">
-      </div>
-      <div class="mb-3">
-        <input type="radio" name="destino" id="destino-1" class="form-check-input">
-        <label for="destino-1">
-          Cidade
-        </label>
-        <input type="radio" name="destino" id="destino-2" class="form-check-input">
-        <label for="destino-2">
-          Campo
-        </label>
-        <input type="radio" name="destino" id="destino-3" class="form-check-input">
-        <label for="destino-3">
-          Praia
-        </label>
-        <input type="radio" name="destino" id="destino-4" class="form-check-input">
-        <label for="destino-4">
-          Montanhas
-        </label>
+        <label for="destino" class="form-label">Destino Preferido:</label>
+        <div class="form-check form-check-inline">
+          <input type="radio" name="destino" id="destino-1" class="form-check-input">
+          <label for="destino-1">
+            Cidade
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" name="destino" id="destino-2" class="form-check-input">
+          <label for="destino-2">
+            Campo
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" name="destino" id="destino-3" class="form-check-input">
+          <label for="destino-3">
+            Praia
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" name="destino" id="destino-4" class="form-check-input">
+          <label for="destino-4">
+            Montanhas
+          </label>
+        </div>
       </div>
       <div class="mb-3">
         <div>
@@ -48,8 +59,7 @@
             a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
         </div>
         <div>
-          <textarea name="resposta" id="input-texto" cols="40" rows="10" maxlength="500">
-          </textarea>
+          <textarea class="form-control" name="resposta" id="input-texto"></textarea>
         </div>
       </div>
       <div class="mb-3">
