@@ -53,7 +53,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 7-1: JavaScript ES6 - let, const, arrow functions e template literals
 - [ ] 7-2: JavaScript ES6 - Objects
 - [ ] 7-3: Testes unitários em JavaScript
-- [ ] 7-5: Projeto - JavaScript Testes Unitários
+- [ ] 7-4: Projeto - JavaScript Testes Unitários
 
 **Bloco 8: Higher Order Functions do JavaScript ES6**
 - [ ] 8-1: JavaScript ES6 - Introdução a Higher Order Functions 
