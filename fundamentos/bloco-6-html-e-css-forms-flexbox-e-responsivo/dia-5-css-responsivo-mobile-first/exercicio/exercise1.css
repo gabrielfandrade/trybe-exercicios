@@ -47,6 +47,23 @@ figcaption {
   font-size: .8em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 962px) {
+  body {
+    background-color: bisque;
+    font-size: x-large;
+    margin: 50px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   
 }
