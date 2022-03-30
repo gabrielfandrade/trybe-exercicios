@@ -65,5 +65,12 @@ figcaption {
 }
 
 @media screen and (min-width: 1400px) {
-  
+  body {
+    background-color: beige;
+    font-size: xx-large;
+    margin-top: 70px;
+    max-width: 1300px;
+  }
+
+
 }
