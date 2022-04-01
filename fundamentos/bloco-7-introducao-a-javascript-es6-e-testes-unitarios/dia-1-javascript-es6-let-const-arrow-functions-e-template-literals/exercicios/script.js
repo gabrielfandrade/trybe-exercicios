@@ -26,3 +26,18 @@ console.log(`Os números ${criarOddsAndEvens(oddsAndEvens)} se encontram ordenad
 // Exercicio 1
 const fatorial = num => num > 1 ? num * fatorial(num - 1) : 1;
 console.log(fatorial(5));
+
+// Exercicio 2
+const longestWord = frase => {
+  let listaPalavras = frase.split(' ');
+  let tamanho = 0;
+  let maiorPalavra = '';
+  for (const palavra of listaPalavras) {
+    if (palavra.length > tamanho) {
+      tamanho = palavra.length;
+      maiorPalavra = palavra;
+    }
+  }
+  return maiorPalavra;
+}
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
