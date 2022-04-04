@@ -37,10 +37,10 @@ function tamanhoObjeto(obj) {
 tamanhoObjeto(lesson1);
 
 function valoresObjeto(obj) {
-  console.log(Object.values(obj));
+  return Object.values(obj);
 }
 
-valoresObjeto(lesson3);
+console.log(valoresObjeto(lesson3));
 
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 
@@ -48,7 +48,7 @@ console.log(allLessons);
 
 function totalAlunos(obj) {
   let alunos = 0;
-  const values = Object.values(obj);
+  const values = valoresObjeto(obj);
   for (const key in values) {
     alunos += values[key].numeroEstudantes;
   }
@@ -56,3 +56,10 @@ function totalAlunos(obj) {
 }
 
 console.log(totalAlunos(allLessons));
+
+function valorChave(obj, key) {
+  const valores = valoresObjeto(obj);
+  return valores[key];
+}
+
+console.log(valorChave(lesson1, 0));
