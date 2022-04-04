@@ -10,4 +10,4 @@ const pessoa = {
 
 addKeys(pessoa, 'lastName', 'Andrade');
 
-console.log(Object.keys(pessoa));
+console.log(Object.values(pessoa));
