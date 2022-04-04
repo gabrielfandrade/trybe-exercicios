@@ -35,3 +35,11 @@ function tamanhoObjeto(obj) {
 }
 
 tamanhoObjeto(lesson1);
+
+function valoresObjeto(obj) {
+  console.log(Object.values(obj));
+}
+
+valoresObjeto(lesson3);
+
+let allLessons = {};
