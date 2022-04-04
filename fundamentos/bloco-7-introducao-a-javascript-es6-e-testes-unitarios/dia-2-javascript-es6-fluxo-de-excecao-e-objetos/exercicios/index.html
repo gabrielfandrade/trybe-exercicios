@@ -32,10 +32,11 @@
         result = parseInt(value1) + parseInt(value2);
       } catch (error) {
         result = error.message;
+      } finally {
+        document.getElementById('result').innerHTML = `Resultado: ${result}`;
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
       }
-      document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
     }
     window.onload = () => {
       const button = document.getElementById('button');
