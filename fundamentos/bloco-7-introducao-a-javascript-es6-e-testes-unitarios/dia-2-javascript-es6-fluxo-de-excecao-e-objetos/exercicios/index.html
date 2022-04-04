@@ -16,10 +16,10 @@
   <p id='result'></p>
   <script>
     function checkSum(valor1, valor2) {
-      if (valor1 === '') {
+      if (valor1 === '' || isNaN(valor1)) {
         throw new Error('Valor 1 invalido');
       }
-      if (valor2 === '') {
+      if (valor2 === '' || isNaN(valor2)) {
         throw new Error('Valor 2 invalido');
       }
     }
