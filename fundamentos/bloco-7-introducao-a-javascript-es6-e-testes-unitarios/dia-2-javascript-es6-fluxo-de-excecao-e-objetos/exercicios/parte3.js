@@ -63,3 +63,11 @@ function valorChave(obj, key) {
 }
 
 console.log(valorChave(lesson1, 0));
+
+function checks(obj, chave, valor) {
+  const keys = Object.keys(obj);
+  const values = Object.values(obj);
+  return keys.indexOf(chave) === values.indexOf(valor);
+}
+
+console.log(checks(lesson3, 'turno', 'noite'));
