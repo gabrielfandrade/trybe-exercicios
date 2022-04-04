@@ -8,4 +8,6 @@ const pessoa = {
   age: 24,
 };
 
-console.log(addKeys(pessoa, 'lastName', 'Andrade'));
+addKeys(pessoa, 'lastName', 'Andrade');
+
+console.log(Object.keys(pessoa));
