@@ -84,3 +84,25 @@ function alunosMatematica(obj) {
 }
 
 console.log(alunosMatematica(allLessons));
+
+function info(obj, nome) {
+  const allLessons = [];
+  let allStudent = 0;
+  const array = Object.values(obj);
+  for (index in array) {
+    if (array[index].professor === nome) {
+      allLessons.push(array[index].materia)
+      allStudent += array[index].numeroEstudantes;
+    }
+  }
+  return { lessons: allLessons, estudantes: allStudent };
+}
+
+function reporte(obj, nome) {
+  const report = {};
+  report.professor = nome;
+  Object.assign(report, info(allLessons, nome));
+  return report;
+}
+
+console.log(reporte(allLessons, 'Maria Clara'));
