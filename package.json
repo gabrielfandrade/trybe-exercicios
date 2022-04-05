@@ -1,0 +1,28 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Gabriel Faustino de Andrade](https://www.linkedin.com/in/gabriel-faustino-657bb313b/) enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀",
+  "main": "jquery-3.6.0.min.js",
+  "dependencies": {
+    "just-validate": "^3.5.1",
+    "pikaday": "^1.8.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielfandrade/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielfandrade/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/gabrielfandrade/trybe-exercicios#readme"
+}
