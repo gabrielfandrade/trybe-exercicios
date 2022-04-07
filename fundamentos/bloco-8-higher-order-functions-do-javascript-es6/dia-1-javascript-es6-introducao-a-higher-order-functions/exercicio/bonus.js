@@ -40,7 +40,7 @@ const mageDmg = (mage) => {
   const turno = {
     danoCausado: 'Não possui mana suficiente',
     manaGasta: 0,
-  }
+  };
   if (mana > 15) {
     const dano = Math.floor((Math.random() * (maximo - minimo + 1)) + minimo);
     turno.manaGasta = 15;
@@ -49,3 +49,30 @@ const mageDmg = (mage) => {
   }
   return turno;
 }
+
+const gameActions = {
+  warriorTurn: (warriorATK) => {
+    const dano = warriorATK(warrior);
+    warrior.damage = dano;
+    dragon.healthPoints -= warrior.damage;
+  },
+  mageTurn: (mageATK) => {
+    const mageStats = mageATK(mage);
+    const dano = mageStats.danoCausado;
+    mage.damage = dano;
+    mage.mana -= mageStats.manaGasta;
+    dragon.healthPoints -= dano;
+  },
+  dragonTurn: (dragonATK) => {
+    const dano = dragonATK(dragon);
+    dragon.damage = dano;
+    warrior.healthPoints -= dragon.damage;
+    mage.healthPoints -= dragon.damage;
+  },
+  turno: () => battleMembers,
+};
+
+gameActions.warriorTurn(warriorDmg);
+gameActions.mageTurn(mageDmg);
+gameActions.dragonTurn(dragonDmg);
+console.log(gameActions.turno());
