@@ -24,3 +24,27 @@ const loteria = (numero, func) => {
 }
 
 console.log(loteria(4 ,check));
+
+//Exercício 3
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const comparar = (gabarito, resposta) => {
+  if (resposta === 'N.A') {
+    return 0;
+  } if (gabarito === resposta) {
+    return 1;
+  }
+  return -0.5;
+}
+
+const correcao = (gabarito, respostas, func) => {
+  let nota = 0;
+  for (let i = 0; i < gabarito.length; i += 1) {
+    const funcReturn = func(gabarito[i], respostas[i]);
+    nota += funcReturn;
+  }
+  return `Nota final: ${nota}`;
+};
+
+console.log(correcao(RIGHT_ANSWERS, STUDENT_ANSWERS, comparar));
