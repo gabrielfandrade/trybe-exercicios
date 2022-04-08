@@ -95,3 +95,8 @@ function everyoneWasBornOnSecXX() {
     book.author.birthYear > 1900 && book.author.birthYear <= 2000;
   });
 };
+
+//Exercício 6
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear < 1990);
+}
