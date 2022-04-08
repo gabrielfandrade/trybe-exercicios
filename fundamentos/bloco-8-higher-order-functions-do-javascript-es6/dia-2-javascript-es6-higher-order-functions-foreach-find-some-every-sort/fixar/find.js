@@ -1,3 +1,4 @@
+//1
 const numbers = [19, 21, 30, 3, 45, 22, 15];
 
 const findDivisibleBy3And5 = () => {
@@ -5,3 +6,12 @@ const findDivisibleBy3And5 = () => {
 }
 
 console.log(findDivisibleBy3And5())
+
+//2
+const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+const findNameWithFiveLetters = () => {
+  return names.find((name) => name.length === 5);
+}
+
+console.log(findNameWithFiveLetters());
