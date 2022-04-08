@@ -88,3 +88,10 @@ function getNamedBook() {
 function booksOrderedByReleaseYearDesc() {
   return books.sort((book1, book2) => book1.releaseYear - book2.releaseYear);
 }
+
+//Exercício 5
+function everyoneWasBornOnSecXX() {
+  return books.every((book) => {
+    book.author.birthYear > 1900 && book.author.birthYear <= 2000;
+  });
+};
