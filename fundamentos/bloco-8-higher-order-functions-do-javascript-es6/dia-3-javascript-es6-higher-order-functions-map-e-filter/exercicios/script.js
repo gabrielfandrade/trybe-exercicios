@@ -66,3 +66,10 @@ function formatedBookNames() {
   return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
 }
 
+// Exercício 2
+function nameAndAge() {
+  const authors = books.map((book) => {
+    return {author: book.author.name, age: (book.releaseYear - book.author.birthYear)}
+  });
+  return authors.sort((authorA, authorB) => authorA.age - authorB.age);
+}
