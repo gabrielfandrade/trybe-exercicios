@@ -78,3 +78,11 @@ function nameAndAge() {
 function fantasyOrScienceFiction() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 }
+
+// Exercício 4
+function oldBooksOrdered() {
+  const oldBooks = books.filter((book) => 2022 - book.releaseYear > 60);
+  return oldBooks.sort((bookA, bookB) => (2022 - bookB.releaseYear) - (2022 - bookA.releaseYear));
+}
+
+console.log(oldBooksOrdered());
