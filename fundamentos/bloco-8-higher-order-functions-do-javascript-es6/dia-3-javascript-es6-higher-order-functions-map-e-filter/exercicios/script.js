@@ -85,4 +85,9 @@ function oldBooksOrdered() {
   return oldBooks.sort((bookA, bookB) => (2022 - bookB.releaseYear) - (2022 - bookA.releaseYear));
 }
 
-console.log(oldBooksOrdered());
+// Exercício 5
+function fantasyOrScienceFictionAuthors() {
+  const authors = fantasyOrScienceFiction().map((book) => book.author.name);
+  return authors.sort();
+}
+
