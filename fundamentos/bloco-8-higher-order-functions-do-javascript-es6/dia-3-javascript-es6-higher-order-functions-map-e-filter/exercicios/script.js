@@ -91,3 +91,8 @@ function fantasyOrScienceFictionAuthors() {
   return authors.sort();
 }
 
+// Exercício 6
+function oldBooks() {
+  const oldBooks = books.filter((book) => 2022 - book.releaseYear > 60);
+  return oldBooks.map((book) => book.name);
+}
