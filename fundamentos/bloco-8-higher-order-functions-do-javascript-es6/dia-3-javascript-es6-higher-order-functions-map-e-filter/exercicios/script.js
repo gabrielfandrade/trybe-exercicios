@@ -96,3 +96,11 @@ function oldBooks() {
   const oldBooks = books.filter((book) => 2022 - book.releaseYear > 60);
   return oldBooks.map((book) => book.name);
 }
+
+// Exercício 7
+function authorWith3DotsOnName() {
+  return books.find((book) => (
+    book.author.name.split(' ')
+      .filter((inicial) => inicial.endsWith('.')).length === 3
+  )).name;
+}
