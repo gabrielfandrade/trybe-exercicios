@@ -73,3 +73,8 @@ function nameAndAge() {
   });
   return authors.sort((authorA, authorB) => authorA.age - authorB.age);
 }
+
+// Exercício 3
+function fantasyOrScienceFiction() {
+  return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+}
