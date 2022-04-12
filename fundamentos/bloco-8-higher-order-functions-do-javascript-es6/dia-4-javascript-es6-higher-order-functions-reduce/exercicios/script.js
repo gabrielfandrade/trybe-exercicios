@@ -87,4 +87,9 @@ function averageAge() {
   return books.reduce((media, book) => media + (book.releaseYear - book.author.birthYear), 0) / diviso
 }
 
-//
+// Exercício 4
+function longestNamedBook() {
+  return books.reduce((maiorNome, book) => (
+    (book.name.length < maiorNome.name.length) ? maiorNome : book)
+    );
+}
