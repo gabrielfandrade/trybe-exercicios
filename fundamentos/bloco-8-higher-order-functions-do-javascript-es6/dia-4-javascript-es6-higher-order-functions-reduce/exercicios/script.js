@@ -81,4 +81,10 @@ function reduceNames() {
   return names.trim();
 }
 
-console.log(reduceNames());
+// Exercício 3
+function averageAge() {
+  const diviso = books.length;
+  return books.reduce((media, book) => media + (book.releaseYear - book.author.birthYear), 0) / diviso
+}
+
+//
