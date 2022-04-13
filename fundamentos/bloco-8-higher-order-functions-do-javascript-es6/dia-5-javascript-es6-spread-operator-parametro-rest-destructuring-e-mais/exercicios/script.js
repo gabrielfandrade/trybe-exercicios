@@ -69,10 +69,16 @@ const filterPeople = (pessoas) => pessoas.filter(
     && bornIn > 1900 && bornIn <= 2000,
 );
 
-console.log(filterPeople(people));
+// console.log(filterPeople(people));
 
 // Exercício 5
+const myList = [1, 2, 3];
 
+const troca = ([a, b, c]) => [c, b, a];
+
+console.log(troca(myList));
+
+// escreva swap abaixo
 
 // Exercício 6
 
