@@ -115,9 +115,19 @@ const shipLength = ({name, length}) => `${name} is ${length} meters long`;
 // Exercício 8
 const greet = (name, message = 'Hi') => `${message} ${name}`;
 
-console.log(greet('John')) // 'Hi John'
-console.log(greet('John', 'Good morning')) // 'Good morning John'
-console.log(greet('Isabela', 'Oi')) // 'Oi Isabela'
+// console.log(greet('John')) // 'Hi John'
+// console.log(greet('John', 'Good morning')) // 'Good morning John'
+// console.log(greet('Isabela', 'Oi')) // 'Oi Isabela'
 
 // Exercício 9
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
 
+const {spring, summer, autumn, winter} = yearSeasons;
+const meses = [...spring, ...summer, ...autumn, ...winter];
+
+console.log(meses);
