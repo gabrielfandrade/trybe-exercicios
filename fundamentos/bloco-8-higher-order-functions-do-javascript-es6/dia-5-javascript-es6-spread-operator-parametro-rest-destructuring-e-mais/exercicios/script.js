@@ -76,12 +76,16 @@ const myList = [1, 2, 3];
 
 const troca = ([a, b, c]) => [c, b, a];
 
-console.log(troca(myList));
-
-// escreva swap abaixo
+// console.log(troca(myList));
 
 // Exercício 6
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
 
+const toObject = ([nome, marca, ano]) => ({nome, marca, ano})
+
+console.log(toObject(palio));
 
 // Exercício 7
 
