@@ -77,13 +77,13 @@ const uppercase = (str, callback) => {
   }, 500);
 };
 
-it('Uppercase with "test"', (done) => {
-  uppercase('test', (str) => {
-    try {
-      expect(str).toBe('TEST');
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
-});
+// it('Uppercase with "test"', (done) => {
+//   uppercase('test', (str) => {
+//     try {
+//       expect(str).toBe('TEST');
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   });
+// });
