@@ -5,8 +5,9 @@
   "main": "jquery-3.6.0.min.js",
   "dependencies": {
     "just-validate": "^3.5.1",
-    "pikaday": "^1.8.2",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.7",
+    "pikaday": "^1.8.2"
   },
   "devDependencies": {
     "jest": "^27.5.1"
