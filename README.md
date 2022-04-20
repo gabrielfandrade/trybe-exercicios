@@ -66,139 +66,139 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 **Bloco 9: JavaScript Assíncrono e Promises**
 - [x] 9-1: JavaScript Assíncrono e Callbacks
 - [x] 9-2: JavaScript Promises
-- [ ] 9-3: Projeto - Carrinho de Compras
-
-**Bloco 10: Testes automatizados com Jest**
-- [ ] 10-1: Primeiros passos no Jest
-- [ ] 10-2: Jest - Testes Assíncronos
-- [ ] 10-3: Jest - Simulando comportamentos
-- [ ] 10-4: Projeto - Jest Assíncrono e Mocking
+- [ ] 9-3: Jest - Testes Assíncronos
+- [ ] 9-4: Projeto - Carrinho de Compras
 
 
 ## Desenvolvimento Front-end ⏳
-**Bloco 11: Introdução - React**
-- [ ] 11-1: Introdução Front-end e React 
-- [ ] 11-2: Componentes React
-- [ ] 11-3: Projeto - Movie Cards Libray
+**Bloco 10: Introdução à React**
+- [ ] 10-1: Introdução Front-end e React 
+- [ ] 10-2: Componentes React
+- [ ] 10-3: Projeto - Sistema Solar
 
-**Bloco 12: Componentes com Estado, Eventos e Formulários com React**
-- [ ] 12-1: Componentes com estados e eventos
-- [ ] 12-2: Formulários no React
-- [ ] 12-3: Projeto - Movie Cards Library Stateful
+**Bloco 11: Componentes com Estado, Eventos e Formulários com React**
+- [ ] 11-1: Componentes com estados e eventos
+- [ ] 11-2: Formulários no React
+- [ ] 11-3: Projeto - Tryunfo
 
-**Bloco 13: Ciclo de vida de componentes e React Router**
-- [ ] 13-1: Ciclo de vida de componentes
-- [ ] 13-2: React Router
-- [ ] 13-3: Projeto - Movie Cards Library CRUD
+**Bloco 12: Ciclo de vida de componentes e React Router**
+- [ ] 12-1: Ciclo de vida de componentes
+- [ ] 12-2: React Router
+- [ ] 12-3: Projeto - TrybeTunes
 
-**Bloco 14: Metodologias Ágeis**
-- [ ] 14-1: Metodologias Ágeis
-- [ ] 14-2: Projeto - Frontend Online Store
+**Bloco 13: Metodologias Ágeis**
+- [ ] 13-1: Metodologias Ágeis
+- [ ] 13-2: Projeto - Frontend Online Store
 
-**Bloco 15: Testes automatizados com React Testing Library**
+**Bloco 14: Testes automatizados com React Testing Library**
 - [ ] 14-1: RTL- Primeiros passos
 - [ ] 14-2: RTL - Mocks e Inputs
 - [ ] 14-3: RTL - Testando React Router
-- [ ] 14-4: Projeto- Testes em React
+- [ ] 14-4: Projeto - Testes em React
 
-**Bloco 16: Gerenciamento de estado com Redux**
-- [ ] 16-1: Introdução ao Redux - O estado global da aplicação
-- [ ] 16-2: Usando o Redux no React
-- [ ] 16-3: Usando o Redux no React - Prática
-- [ ] 16-4: Usando o Redux no React - Actions Assíncronas
-- [ ] 16-5: Testes em React-Redux
-- [ ] 16-6: Projeto - Trybe Wallet 
+**Bloco 15: Gerenciamento de estado com Redux**
+- [ ] 15-1: Introdução ao Redux - O estado global da aplicação
+- [ ] 15-2: Usando o Redux no React
+- [ ] 15-3: Usando o Redux no React - Prática
+- [ ] 15-4: Usando o Redux no React - Actions Assíncronas
+- [ ] 15-5: Testes em React-Redux
+- [ ] 15-6: Projeto - Trybe Wallet 
 
-**Bloco 17: Projeto Jogo de Trivia**
-- [ ] 17-1: Projeto - Jogo de Trivia
+**Bloco 16: Projeto Jogo de Trivia**
+- [ ] 16-1: Projeto - Jogo de Trivia
 
-**Bloco 18: Context API e React Hooks**
-- [ ] 18-1: Context API do React 
-- [ ] 18-2: React Hooks - useState e useContext
-- [ ] 18-3: React Hooks - useEffect e Hooks customizados
-- [ ] 18-4: Projeto - StarWars Datatable com Context API e Hooks
+**Bloco 17: Context API e React Hooks**
+- [ ] 17-1: Context API do React 
+- [ ] 17-2: React Hooks - useState e useContext
+- [ ] 17-3: React Hooks - useEffect e Hooks customizados
+- [ ] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 
-**Bloco 19: Projeto App de Receitas**
-- [ ] 19-1: Projeto - App de Receitas
+**Bloco 18: Projeto App de Receitas**
+- [ ] 18-1: Projeto - App de Receitas
 
 ## Desenvolvimento Back-end ⏳
+**Bloco 19: Docker: Utilizando Containers**
+- [ ] 19-1: Introdução - Back-end
+- [ ] 19-2: Utilizando Containers - Docker
+- [ ] 19-3: Manipulação e Criação de Imagens no Docker
+- [ ] 19-4: Orquestrando Containers com Docker Compose
+- [ ] 19-5: Projeto - Docker Todo-List
+
 **Bloco 20: Introdução à SQL**
-- [ ] 20-1: Introdução -Back-end, Banco de dados relacionais e SQL
+- [ ] 20-1: Banco de dados SQL
 - [ ] 20-2: Encontrando dados em um banco de dados
 - [ ] 20-3: Filtrando dados de forma específica
 - [ ] 20-4: Manipulando tabelas
 - [ ] 20-5: Projeto - All for one
 
-**Bloco 21: Funções SQL, Joins e Subqueries**
+**Bloco 21: Funções SQL, Joins e Normalização**
 - [ ] 21-1: Funções mais usadas no SQL
-- [ ] 21-2: Descomplicando JOINs, UMIONs e Subqueries
-- [ ] 21-3: Stored Routines & Stored Functions
-- [ ] 21-4: Projeto Vocabulary Booster
+- [ ] 21-2: Descomplicando JOINs
+- [ ] 21-3: Transformando ideais em um modelo de banco de dados
+- [ ] 21-4: Projeto - One For All
 
+**Bloco 22: Introdução ao desenvolvimento Web com Node.js**
+- [ ] 22-1: Node.js - Um motor JavaScript
+- [ ] 22-2: Node.js - Fluxo Assíncrono
+- [ ] 22-3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [ ] 22-4: Express - HTTP com Node.js
+- [ ] 22-5: Express - Middlewares
+- [ ] 22-6: Projeto - Talker Manager
 
-**Bloco 22: Bancos de dados relacionais**
-- [ ] 22-1: Transformando ideias em um modelo de banco de dados - Parte 1
-- [ ] 22-2: Normalização, Formas Normais e Dumps
-- [ ] 22-2: Transformando ideias em um modelo de banco de dados - Parte 2
-- [ ] 22-3: Projeto - One For All
+**Bloco 23: Node.js - Camada de Serviço e Arquitetura Rest e Restful**
+- [ ] 23-1: Arquitetura de Software - Camada de Model
+- [ ] 23-2: Arquitetura de Software - Camada de Controller e Service
+- [ ] 23-3: Arquitetura Web - Rest e Restful
+- [ ] 23-4: Arquitetura de Software - Testando as Camadas
+- [ ] 23-5: Projeto - Store Manager
 
-**Bloco 23: Introdução - NoSQL**
-- [ ] 23-1:  NoSQL, MongoDB - Introdução
-- [ ] 23-2: Filter Operators
-- [ ] 23-3: Projeto - Data Flights
+**Bloco 24: Node.js - ORM e Autenticação**
+- [ ] 24-1: ORM - Interface da aplicação com o banco de dados
+- [ ] 24-2: ORM - Associations
+- [ ] 24-3: JWT - (JSON Web Token)
+- [ ] 24-4: Testando APIs com Testes de Integração
+- [ ] 24-5: Projeto - API de Blogs
 
-**Bloco 24: MongoDB: Updates Simples e Complexos**
-- [ ] 24-1: Updates Simples
-- [ ] 24-2: Updates Complexos - Arrays - Parte 1
-- [ ] 24-3: Updates Complexos - Arrays - Parte 2
-- [ ] 24-4: Projeto - Commerce
+**Bloco 25: Deployment**
+- [ ] 25-1: Infraestrutura - Deploy com Heroku
+- [ ] 25-2: Deploy Docker & Heroku
+- [ ] 25-3: Projeto - Stranger Things
 
-**Bloco 25: Aggregation Framework**
-- [ ] 25-1: Aggregation Framework - Part 1
-- [ ] 25-2: Aggregation Framework - Part 2
-- [ ] 25-3: Projeto - Aggregations
+**Bloco 26: TypeScript**
+- [ ] 26-1: Introdução ao TypeScript
+- [ ] 26-2: Tipagem Estática e Generics
+- [ ] 26-3: Express com TypeScript
+- [ ] 26-4: Projeto - Trybe Smith
 
-**Bloco 26: Introdução ao desenvolvimento Web com NodeJS**
-- [ ] 26-1: NodeJS - Introdução
-- [ ] 26-2: NodeJS - Fluxo Assíncrono
-- [ ] 26-3: Testes com NodeJS
-- [ ] 26-4: Express : HTTP com Node.js
-- [ ] 24-5: Praticando Express
-- [ ] 26-6: Projeto - Talker Manager
+**Bloco 27: Programação Orientada a Objetos (POO) e SOLID**
+- [ ] 27-1: Herança e Interfaces
+- [ ] 27-2: Polimorfismo
+- [ ] 27-3: SOLID - Introdução e Princípios S, O e D
+- [ ] 27-4: SOLID - Princípios L e I
+- [ ] 27-5: Projeto - Trybers and Dragons
 
-**Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful**
-- [ ] 27-1: Arquitetura de Software e Camada de Model
-- [ ] 27-2: Arquitetura de Software - Camada de Controller e Service
-- [ ] 27-3: Arquitetura Web - Rest e Restful
-- [ ] 27-4: Arquitetura de Software - Testando as Camadas
-- [ ] 27-5: Projeto - Store Manager
+**Bloco 28: Projeto - TFC - Trybe Futebol Clube**
+- [ ] 28-1: Projeto - TFC - Trybe Futebol Clube
 
-**Bloco 28: Autenticação e Upload de Arquivos**
-- [ ] 28-1: NodeJS - JWT - (JSON Web Token)
-- [ ] 28-2: NodeJS - Upload de arquivos com 'multer' 
-- [ ] 28-3: NodeJS - Testando APIs com Testes de Integração
-- [ ] 28-4: Projeto - Cookmaster
+**Bloco 29: Introdução ao MongoDB**
+- [ ] 29-1: MongoDB - Introdução
+- [ ] 29-2: Filter Operators
+- [ ] 29-3: Operadores de consulta
+- [ ] 29-4: Updates Simples
+- [ ] 29-5: Updates Complexos - Arrays
+- [ ] 29-6: Projeto - Commerce
 
-**Bloco 29: Introdução - Deploy**
-- [ ] 29-1: Introdução e Infraestrutura - Deploy com Heroku
-- [ ] 29-2: Deploy - Gerenciadores de Processos
-- [ ] 29-3: Projeto - Stranger Things
+**Bloco 30: MongoDB com Node.js e POO**
+- [ ] 30-1: MongoDB e arquitetura MSC
+- [ ] 30-2: MongoDB e POO
+- [ ] 30-3: Projeto - Car Shop
 
-**Bloco 30: Arquitetura SOLID e ORM**
-- [ ] 30-1: Arquitetura - Princípios SOLID
-- [ ] 30-2: ORM - Interface da aplicação com o banco de dados
-- [ ] 30-3: ORM - Associations
-- [ ] 30-4: Projeto - API de Blogs
+**Bloco 31: Projeto - App de Delivery**
+- [ ] 31-1: Projeto - App de Delivery
 
-**Bloco 31: Sockets**
-- [ ] 31-1: Arquitetura de Software - Camada de View
-- [ ] 31-2: Sockets - TCP/UDP & NET
-- [ ] 31-3: Sockets - Socket.io
-- [ ] 31-4: Sockets - Praticando Socket.io
-- [ ] 31-5: Projeto - Webchat
-
-**Bloco 32: Projeto - App de Delivery**
-- [ ] 32-1: Projeto - App de Delivery
+**Bloco 32: MasterClass - VPS, CI/CD**
+- [ ] 32-1: Dia 1
+- [ ] 32-2: Dia 2
 
 
 ## Ciência da Computação ⏳
@@ -208,10 +208,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 33-3: Testes
 - [ ] 33-4: Projeto - Job Insights
 
-**Bloco 34: Programação Orientada a Objetos e Padrões de Projeto**
-- [ ] 34-1: Introdução à programação orientada a objetos
-- [ ] 34-2: Herança, Composição e Interfaces
-- [ ] 34-3: Padrões de projeto
+**Bloco 34: Padrões de Projeto**
+- [ ] 34-1: P.O.O em Python
+- [ ] 34-2: Padrões - Iterator, Adapter, Strategy
+- [ ] 34-3: Padrões - Decorator, Observer, Factory
 - [ ] 34-4: Projeto - Relatórios de Estoque
 
 **Bloco 35: Redes e Raspagem de Dados**
@@ -235,9 +235,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 **Bloco 38: Estrutura de Dados 2: Listas, Filas e pilhas**
 - [ ] 38-1: Nó e listas encadeadas
-- [ ] 38-2: Deque
-- [ ] 38-3: Pilhas
-- [ ] 38-4: Projeto - TING - Trybe Is Not Google
+- [ ] 38-2: Pilhas
+- [ ] 38-3: Projeto - TING - Trybe Is Not Google
 
 
 
