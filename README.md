@@ -66,13 +66,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 **Bloco 9: JavaScript Assíncrono e Promises**
 - [x] 9-1: JavaScript Assíncrono e Callbacks
 - [x] 9-2: JavaScript Promises
-- [ ] 9-3: Jest - Testes Assíncronos
-- [ ] 9-4: Projeto - Carrinho de Compras
+- [x] 9-3: Jest - Testes Assíncronos
+- [x] 9-4: Projeto - Carrinho de Compras
 
 
 ## Desenvolvimento Front-end ⏳
 **Bloco 10: Introdução à React**
-- [ ] 10-1: Introdução Front-end e React 
+- [x] 10-1: Introdução Front-end e React 
 - [ ] 10-2: Componentes React
 - [ ] 10-3: Projeto - Sistema Solar
 
