@@ -73,7 +73,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ## Desenvolvimento Front-end ⏳
 **Bloco 10: Introdução à React**
 - [x] 10-1: Introdução Front-end e React 
-- [ ] 10-2: Componentes React
+- [x] 10-2: Componentes React
 - [ ] 10-3: Projeto - Sistema Solar
 
 **Bloco 11: Componentes com Estado, Eventos e Formulários com React**
