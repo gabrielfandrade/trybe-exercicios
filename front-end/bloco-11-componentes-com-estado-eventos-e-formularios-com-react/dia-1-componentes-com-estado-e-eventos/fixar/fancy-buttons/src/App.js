@@ -5,27 +5,22 @@ class App extends React.Component{
 
   constructor() {
     super()
-    this.bestSerie = this.bestSerie.bind(this)
+    this.changeClickTimes = this.changeClickTimes.bind(this)
+    this.state = {
+      clickTimes: 0
+    }
   }
 
-  bestSerie() {
-    console.log('The Legend of Zelda');
-  }
-
-  bestSndSerie() {
-    console.log('Pokémon');
-  }
-
-  bestTrdSerie() {
-    console.log('Kingdom Hearts');
+  changeClickTimes() {
+    this.setState((state, _props) => ({
+      clickTimes: state.clickTimes + 1
+    }))
   }
 
   render() {
     return (
       <div className="App">
-        <button onClick={this.bestSerie}>Best Game Serie</button>
-        <button onClick={this.bestSndSerie}>2nd Best Game Serie</button>
-        <button onClick={this.bestTrdSerie}>3rd Best Game Serie</button>
+        <button onClick={this.changeClickTimes}>{this.state.clickTimes}</button>
       </div>
     );
   }
