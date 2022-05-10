@@ -1,25 +1,31 @@
 import './App.css';
 import React from 'react';
 
-function bestSerie() {
-  console.log('The Legend of Zelda');
-}
-
-function bestSndSerie() {
-  console.log('Pokémon');
-}
-
-function bestTrdSerie() {
-  console.log('Kingdom Hearts');
-}
-
 class App extends React.Component{
+
+  constructor() {
+    super()
+    this.bestSerie = this.bestSerie.bind(this)
+  }
+
+  bestSerie() {
+    console.log('The Legend of Zelda');
+  }
+
+  bestSndSerie() {
+    console.log('Pokémon');
+  }
+
+  bestTrdSerie() {
+    console.log('Kingdom Hearts');
+  }
+
   render() {
     return (
       <div className="App">
-        <button onClick={bestSerie}>Best Game Serie</button>
-        <button onClick={bestSndSerie}>2nd Best Game Serie</button>
-        <button onClick={bestTrdSerie}>3rd Best Game Serie</button>
+        <button onClick={this.bestSerie}>Best Game Serie</button>
+        <button onClick={this.bestSndSerie}>2nd Best Game Serie</button>
+        <button onClick={this.bestTrdSerie}>3rd Best Game Serie</button>
       </div>
     );
   }
