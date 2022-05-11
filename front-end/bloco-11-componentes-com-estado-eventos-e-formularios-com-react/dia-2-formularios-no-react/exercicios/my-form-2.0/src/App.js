@@ -1,88 +1,95 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Form from './Form';
 import FormError from './FormError';
 import FormDataDisplay from './FormDataDisplay';
 
-const DADOS = {
-  nome: '',
+const INITIAL_STATE = {
+  name: '',
   email: '',
   cpf: '',
-  endereco: '',
-  cidade: '',
-  estado: '',
-  tipo: '',
-  resumo: '',
-  cargo: '',
-  descricaoCargo: '',
+  address: '',
+  city: '',
+  countryState: '',
+  addressType: '',
+  resume: '',
+  role: '',
+  roleDescription: '',
   formError: {},
   submitted: false,
 }
 
-class App extends React.Component{
-  state = {
-    DADOS
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = INITIAL_STATE;
   }
 
-  handleChange = ({ target }) => {
-    let { name, value } = target;
+  changeHandler = event => {
+    let { name, value } = event.target;
 
     if (name === 'name') value = value.toUpperCase();
-    if (name === 'endereco') value = this.validaEndereco(value);
+    if (name === 'address') value = this.validateAddress(value);
 
-    this.atualizaState(name, value);
+    this.updateState(name, value);
   }
 
-  onBlurHandle = ({ target }) => {
-    let { name, value } = target;
+  onBlurHandler = event => {
+    let { name, value } = event.target;
 
-    if (name === 'cidade') value = value.match(/^\d/) ? '' : value;
+    if (name === 'city') value = value.match(/^\d/) ? '' : value;
 
-    this.atualizaState(name, value);
+    this.updateState(name, value);
   }
 
-  atualizaState = (name, value) => {
-    this.setState(state => ({
+  updateState(name, value) {
+    this.setState((state) => ({
       [name]: value,
       formError: {
         ...state.formError,
-        [name]: this.validaCampo(name, value)
+        [name]: this.validateField(name, value)
       }
     }));
   }
 
-  validaEndereco = endereco => endereco.replace(/[^\w\s]/gi, '');
+  validateAddress = address => address.replace(/[^\w\s]/gi, '')
 
   handleSubmit = event => {
     event.preventDefault();
   }
 
-  validaCampo = (campo, value) => {
-    switch (campo) {
-      case 'email': 
-        const valido = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2})$/i)
-        return valido ? '' : ' é invalido ';
-      default: 
+  validateField(fieldName, value) {
+    switch (fieldName) {
+      case 'email':
+        const isValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2})$/i)
+        return isValid ? '' : ' is invalid';
+      default:
         break;
     }
     return '';
   }
 
-  resetarFormulario = () => { this.setState(DADOS) }
+  resetForm = () => { this.setState(INITIAL_STATE) };
 
-  enviarFormulario = () => { this.setState({ submitted: true }) }
+  sendForm = () => { this.setState({ submitted: true }) };
 
   render() {
     const { submitted } = this.state;
 
     return (
-      <div className="App">
-        <Form sendForm={ this.sendForm } resetForm={ this.resetForm } handleChange={ this.handleChange } currentState={ this.state } onBlurHandle={ this.onBlurHandle } />
-        <div>
-          <FormError formError={ this.state.formError } />
+      <main>
+        <Form
+          sendForm={this.sendForm}
+          resetForm={this.resetForm}
+          changeHandler={this.changeHandler}
+          currentState={ this.state }
+          onBlurHandler={ this.onBlurHandler }
+        />
+        <div className="container">
+          <FormError formError={this.state.formError} />
         </div>
-        { submitted && <FormDataDisplay currentState={ this.setState } /> }
-      </div>
+        { submitted && <FormDataDisplay currentState={ this.state } /> }
+      </main>
     );
   }
 }

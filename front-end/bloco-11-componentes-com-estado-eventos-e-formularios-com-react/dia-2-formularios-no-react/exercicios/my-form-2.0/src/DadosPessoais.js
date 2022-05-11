@@ -1,66 +1,105 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const estados = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
+const states = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
 
-class DadosPessoais extends React.Component {
+class DadosPessoais extends Component {
   render() {
-    const { handleChange, onBlurHandle, currentState } = this.props;
-
+    const { changeHandler, onBlurHandler, currentState } = this.props;
     return (
       <fieldset>
         <legend>Dados pessoais</legend>
-        <div>
-          <label>
-            Nome: 
-            <input type='name' name='nome' maxLength='40' onChange={ handleChange } required />
-          </label>
+        <div className="container">
+          Nome:
+          <input
+            type="name"
+            name="name"
+            maxLength="40"
+            required
+            onChange={changeHandler}
+          />
         </div>
-        <div>
-          <label>
-            Email: 
-            <input type='email' name='email' maxLength='50' onChange={ handleChange } required />
-          </label>
+        <div className="container">
+          Email:
+          <input
+            type="email"
+            name="email"
+            maxLength="50"
+            required
+            onChange={changeHandler}
+          />
         </div>
-        <div>
-          <label>
-            CPF: 
-            <input type='text' name='cpf' maxLength='11' onChange={ handleChange } required />
-          </label>
+        <div className="container">
+          CPF:
+          <input
+            type="text"
+            name="cpf"
+            maxLength="11"
+            required
+            onChange={changeHandler}
+          />
         </div>
-        <div>
-          <label>
-          Endereço: 
-            <input type='text' name='endereco' maxLength='200' onChange={ handleChange } required />
-          </label>
+        <div className="container">
+          Endereço:
+          <input
+            type="text"
+            name="address"
+            maxLength="200"
+            required
+            onChange={changeHandler}
+          />
         </div>
-        <div>
-          <label>
-          Cidade: 
-            <input type='text' name='cidade' maxLength='28' value={ currentState.city } onBlur={ onBlurHandle } onChange={ handleChange } required />
-          </label>
+        <div className="container">
+          Cidade:
+          <input
+            type="text"
+            name="city"
+            maxLength="28"
+            required
+            value={currentState.city}
+            onBlur={onBlurHandler}
+            onChange={changeHandler}
+          />
         </div>
-        <div>
-          <label>
-          Estado: 
-            <select name='estado' onChange={ handleChange } defaultValue='' required>
-              {
-                estados.map((value, key) => (
-                  <option key={ key }>{ value }</option>
-                ))
-              }
-            </select>
-          </label>
+        <div className="container">
+          Estado:
+          <select
+            name="countryState"
+            required
+            onChange={changeHandler}
+            defaultValue=""
+          >
+            <option value="">Selecione</option>
+            {
+              states.map((value, key) => (
+                <option key={key}>{value}</option>
+              ))
+            }
+          </select>
         </div>
-        <div>
-          <label>
-            <input type='radio' id='house' name='tipo' value='casa' onChange={ handleChange } /> Casa
+        <div className="container">
+          <label htmlFor="house">
+            <input
+              type="radio"
+              id="house"
+              name="addressType"
+              value="house"
+              onChange={changeHandler}
+            />
+            Casa
           </label>
-          <label>
-            <input type='radio' id='apartamento' name='tipo' value='apartamento' onChange={ handleChange } /> Apartamento
+          <label htmlFor="apart">
+            <input
+              type="radio"
+              id="apart"
+              name="addressType"
+              value="apartment"
+              onChange={changeHandler}
+            />
+            Apartamento
           </label>
         </div>
       </fieldset>
-    )
+    );
   }
 }
 

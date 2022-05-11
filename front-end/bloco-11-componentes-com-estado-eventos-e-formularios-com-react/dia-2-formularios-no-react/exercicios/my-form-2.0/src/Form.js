@@ -1,19 +1,31 @@
-import React from 'react';
-import DadosPessoais from './DadosPessoais.js';
-import UltimoEmprego from './UltimoEmprego.js';
-import Botoes from './Botoes.js';
+import React, { Component } from 'react';
+import DadosPessoais from './DadosPessoais'
+import UltimoEmprego from './UltimoEmprego'
 
-class Form extends React.Component {
+class Form extends Component {
   render() {
-    const { handleChange, currentState, onBlurHandle } = this.props;
+    const { sendForm, resetForm, changeHandler, currentState, onBlurHandler } = this.props;
 
     return (
       <form>
-        <DadosPessoais handleChange={ handleChange } onBlurHandle={ onBlurHandle } currentState= { currentState } />
-        {/* <UltimoEmprego /> */}
-        {/* <Botoes /> */}
+        <DadosPessoais
+          changeHandler={ changeHandler }
+          onBlurHandler= { onBlurHandler }
+          currentState= { currentState }
+        />
+        <UltimoEmprego changeHandler={ changeHandler } />
+        <input
+            type="button"
+            onClick={ sendForm }
+            value="Enviar"
+        />
+        <input
+          type="reset"
+          onClick={ resetForm }
+          value="Limpar"
+        />
       </form>
-    )
+    );
   }
 }
 
