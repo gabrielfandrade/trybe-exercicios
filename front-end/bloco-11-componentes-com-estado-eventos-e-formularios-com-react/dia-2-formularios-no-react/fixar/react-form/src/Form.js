@@ -1,18 +1,35 @@
 import React from 'react';
+import BestSerie from './BestSerie';
+import BestGameOfSerie from './BestGameOfSerie';
 
 class Form extends React.Component {
   state = {
-    bestSerie: 'The Legend of Zelda',
+    bestSerie: 'Escolha um jogo aqui',
     bestGameOfSerie: '',
     worstGameOfSerie: '',
     commentaries: '',
     news: false,
+    formularioComErros: true,
+  }
+
+  handleError = () => {
+    const { bestSerie, bestGameOfSerie } = this.state;
+
+    const errorCases = [
+      bestSerie === 'Escolha um jogo aqui',
+      !bestGameOfSerie.length,
+      bestGameOfSerie > 50,
+    ];
+
+    const formularioPreenchido = errorCases.every(error => error !== true );
+
+    this.setState({ formularioComErros: !formularioPreenchido });
   }
 
   handleChange = ({ target }) => {
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
-    this.setState({ [name]: value });
+    this.setState({ [name]: value }, () => { this.handleError(); });
   }
 
   render() {
@@ -21,31 +38,16 @@ class Form extends React.Component {
         <form>
           <fieldset>
             <h1>Formulário de Game Series</h1>
-            <fieldset>
-              <label>
-                Qual a sua serie de jogos favorita? 
-                <select name='bestSerie' value={this.state.bestSerie} onChange={this.handleChange}>
-                  <option value='The Legend of Zelda'>The Legend of Zelda</option>
-                  <option value='Pokémon'>Pokémon</option>
-                  <option value='Kingdom Hearts'>Kingdom Hearts</option>
-                  <option value='Resident Evil'>Resident Evil</option>
-                </select>
-              </label>
-            </fieldset>
-            <fieldset>
-              <div>
-                <label>
-                  Qual o melhor jogo dessa serie?
-                  <input type='text' name='bestGameOfSerie' value={this.state.bestGameOfSerie} onChange={this.handleChange}></input>
-                </label>
-              </div>
-              <div>
-                <label>
-                  Arte favorita deste jogo:
-                  <input type='file' name='favoriteArt'></input>
-                </label>
-              </div>
-            </fieldset>
+            <BestSerie 
+              value={this.state.bestSerie}
+              handleChange={this.handleChange}
+              handleError={this.handleError}
+            />
+            <BestGameOfSerie 
+              value={this.state.bestGameOfSerie}
+              handleChange={this.handleChange}
+              handleError={this.handleError}
+            />
             <fieldset>
               <div>
                 <label>
