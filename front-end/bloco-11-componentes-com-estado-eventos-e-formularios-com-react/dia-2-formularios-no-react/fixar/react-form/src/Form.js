@@ -6,56 +6,69 @@ class Form extends React.Component {
     bestGameOfSerie: '',
     worstGameOfSerie: '',
     commentaries: '',
+    news: false,
   }
 
-  handleSerie = (event) => {
-    this.setState({ bestSerie: event.target.value });
-  }
-
-  handleBestGameOfSerie = (event) => {
-    this.setState({ bestGameOfSerie: event.target.value });
-  }
-
-  handleWorstGameOfSerie = (event) => {
-    this.setState({ worstGameOfSerie: event.target.value });
-  }
-
-  handleCommentaries = (event) => {
-    this.setState({ commentaries: event.target.value });
+  handleChange = ({ target }) => {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    this.setState({ [name]: value });
   }
 
   render() {
     return (
       <div>
         <form>
-          <h1>Formulário de Game Series</h1>
-          <label>
-            Qual a sua serie de jogos favorita? 
-            <select value={this.state.bestSerie} onChange={this.handleSerie}>
-              <option value='The Legend of Zelda'>The Legend of Zelda</option>
-              <option value='Pokémon'>Pokémon</option>
-              <option value='Kingdom Hearts'>Kingdom Hearts</option>
-              <option value='Resident Evil'>Resident Evil</option>
-            </select>
-          </label>
-          <div>
-            <label>
-              Qual o melhor jogo dessa serie? 
-              <input type='text' name='bestGameOfSerie' value={this.state.bestGameOfSerie} onChange={this.handleBestGameOfSerie}></input>
-            </label>
-          </div>
-          <div>
-            <label>
-              Qual o pior jogo dessa serie? 
-              <input type='text' name='worstGameOfSerie' value={this.state.worstGameOfSerie} onChange={this.handleWorstGameOfSerie}></input>
-            </label>
-          </div>
-          <div>
-            <label>
-              Comentários: 
-              <textarea value={this.state.commentaries} onChange={this.handleCommentaries}/>
-            </label>
-          </div>
+          <fieldset>
+            <h1>Formulário de Game Series</h1>
+            <fieldset>
+              <label>
+                Qual a sua serie de jogos favorita? 
+                <select name='bestSerie' value={this.state.bestSerie} onChange={this.handleChange}>
+                  <option value='The Legend of Zelda'>The Legend of Zelda</option>
+                  <option value='Pokémon'>Pokémon</option>
+                  <option value='Kingdom Hearts'>Kingdom Hearts</option>
+                  <option value='Resident Evil'>Resident Evil</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label>
+                  Qual o melhor jogo dessa serie?
+                  <input type='text' name='bestGameOfSerie' value={this.state.bestGameOfSerie} onChange={this.handleChange}></input>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Arte favorita deste jogo:
+                  <input type='file' name='favoriteArt'></input>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label>
+                  Qual o pior jogo dessa serie?
+                  <input type='text' name='worstGameOfSerie' value={this.state.worstGameOfSerie} onChange={this.handleChange}></input>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label>
+                  Comentários: 
+                  <textarea name='commentaries' value={this.state.commentaries} onChange={this.handleChange}/>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Gostaria de receber formulários como esse? 
+                  <input type='checkbox' name='news' value={this.state.news} onChange={this.handleChange}></input>
+                </label>
+              </div>
+            </fieldset>
+          </fieldset>
         </form>
       </div>
     )
