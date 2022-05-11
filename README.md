@@ -78,7 +78,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 **Bloco 11: Componentes com Estado, Eventos e Formulários com React**
 - [x] 11-1: Componentes com estados e eventos
-- [ ] 11-2: Formulários no React
+- [x] 11-2: Formulários no React
 - [ ] 11-3: Projeto - Tryunfo
 
 **Bloco 12: Ciclo de vida de componentes e React Router**
