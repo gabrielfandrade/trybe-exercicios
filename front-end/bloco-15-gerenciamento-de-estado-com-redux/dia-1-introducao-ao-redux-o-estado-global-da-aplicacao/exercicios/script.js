@@ -22,6 +22,8 @@ const reducer = (state = INITIAL_STATE, action) => {
   }
 };
 
+const store = Redux.createStore(reducer);
+
 document.getElementById('next').addEventListener('click', () => {
   store.dispatch({ type: 'NEXT_COLOR' });
 });
@@ -29,4 +31,8 @@ document.getElementById('previous').addEventListener('click', () => {
   store.dispatch({ type: 'PREVIOUS_COLOR' });
 });
 
-const store = Redux.createStore(reducer);
+store.subscribe(() => {
+  const { colors, index } = store.getState();
+  document.getElementById('value').innerHTML = colors[index];
+  document.getElementById('container').style.backgroundColor = colors[index];
+});
