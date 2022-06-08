@@ -22,4 +22,11 @@ const reducer = (state = INITIAL_STATE, action) => {
   }
 };
 
+document.getElementById('next').addEventListener('click', () => {
+  store.dispatch({ type: 'NEXT_COLOR' });
+});
+document.getElementById('previous').addEventListener('click', () => {
+  store.dispatch({ type: 'PREVIOUS_COLOR' });
+});
+
 const store = Redux.createStore(reducer);
