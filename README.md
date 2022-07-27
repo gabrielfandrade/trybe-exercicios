@@ -114,7 +114,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 17-4: Projeto - StarWars Datatable com Context API e Hooks
 
 **Bloco 18: Projeto App de Receitas**
-- [ ] 18-1: Projeto - App de Receitas
+- [x] 18-1: Projeto - App de Receitas
 
 ## Desenvolvimento Back-end ⏳
 **Bloco 19: Docker: Utilizando Containers**
