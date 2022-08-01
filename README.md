@@ -120,7 +120,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 **Bloco 19: Docker: Utilizando Containers**
 - [x] 19-1: Utilizando Containers - Docker
 - [x] 19-2: Manipulação e Criação de Imagens no Docker
-- [ ] 19-3: Orquestrando Containers com Docker Compose
+- [x] 19-3: Orquestrando Containers com Docker Compose
 - [ ] 19-4: Projeto - Docker Todo-List
 
 **Bloco 20: Introdução à SQL**
