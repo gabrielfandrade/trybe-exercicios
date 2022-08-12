@@ -131,8 +131,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 20-5: Projeto - All for one
 
 **Bloco 21: Funções SQL, Joins e Normalização**
-- [ ] 21-1: Funções mais usadas no SQL
-- [ ] 21-2: Descomplicando JOINs
+- [x] 21-1: Funções mais usadas no SQL
+- [x] 21-2: Descomplicando JOINs
 - [ ] 21-3: Transformando ideais em um modelo de banco de dados
 - [ ] 21-4: Projeto - One For All
 
