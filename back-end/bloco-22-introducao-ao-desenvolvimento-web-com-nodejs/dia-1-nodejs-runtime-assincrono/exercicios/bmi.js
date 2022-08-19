@@ -1,5 +1,4 @@
-const weight = 50;
-const height = 173;
+const readline = require('readline-sync');
 
 const bmi = (weight, height) => {
   const heightInMeters = height / 100;
@@ -9,5 +8,8 @@ const bmi = (weight, height) => {
 
   return result;
 }
+
+const weight = readline.questionInt('What\'s your weight? (kg) ');
+const height = readline.questionInt('What\'s your height? (cm) ');
 
 console.log(bmi(weight, height));
