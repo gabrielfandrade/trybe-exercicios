@@ -9,7 +9,7 @@ const bmi = (weight, height) => {
   return result;
 }
 
-const weight = readline.questionInt('What\'s your weight? (kg) ');
+const weight = readline.questionFloat('What\'s your weight? (kg) ');
 const height = readline.questionInt('What\'s your height? (cm) ');
 
 console.log(bmi(weight, height));
