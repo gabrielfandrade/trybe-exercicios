@@ -121,18 +121,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 19-1: Utilizando Containers - Docker
 - [x] 19-2: Manipulação e Criação de Imagens no Docker
 - [x] 19-3: Orquestrando Containers com Docker Compose
-- [ ] 19-4: Projeto - Docker Todo-List
+- [x] 19-4: Projeto - Docker Todo-List
 
 **Bloco 20: Introdução à SQL**
-- [ ] 20-1: Banco de dados SQL
-- [ ] 20-2: Encontrando dados em um banco de dados
-- [ ] 20-3: Filtrando dados de forma específica
-- [ ] 20-4: Manipulando tabelas
-- [ ] 20-5: Projeto - All for one
+- [x] 20-1: Banco de dados SQL
+- [X] 20-2: Encontrando dados em um banco de dados
+- [x] 20-3: Filtrando dados de forma específica
+- [x] 20-4: Manipulando tabelas
+- [x] 20-5: Projeto - All for one
 
 **Bloco 21: Funções SQL, Joins e Normalização**
-- [ ] 21-1: Funções mais usadas no SQL
-- [ ] 21-2: Descomplicando JOINs
+- [x] 21-1: Funções mais usadas no SQL
+- [x] 21-2: Descomplicando JOINs
 - [ ] 21-3: Transformando ideais em um modelo de banco de dados
 - [ ] 21-4: Projeto - One For All
 
