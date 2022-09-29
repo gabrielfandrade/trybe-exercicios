@@ -139,28 +139,28 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 **Bloco 22: Introdução ao desenvolvimento Web com Node.js**
 - [x] 22-1: Intro - Node.js & Node.js: Runtime Assíncrono
 - [x] 22-2: Node.js: API REST com Express
-- [ ] 22-3: Node.js: Testes de Integração
-- [ ] 22-4: Express: Middlewares
-- [ ] 22-5: Node.js: Express e Mysql
-- [ ] 22-6: Projeto - Talker Manager
+- [x] 22-3: Node.js: Testes de Integração
+- [x] 22-4: Express: Middlewares
+- [x] 22-5: Node.js: Express e Mysql
+- [x] 22-6: Projeto - Talker Manager
 
 **Bloco 23: Node.js - Camada de Serviço e Arquitetura Rest e Restful**
-- [ ] 23-1: Arquitetura de Software - Camada de Model
-- [ ] 23-2: Arquitetura de Software - Camada de Controller e Service
-- [ ] 23-3: Arquitetura Web - Rest e Restful
-- [ ] 23-4: Arquitetura de Software - Testando as Camadas
-- [ ] 23-5: Projeto - Store Manager
+- [x] 23-1: Arquitetura de Software - Camada de Model
+- [x] 23-2: Arquitetura de Software - Camada de Controller e Service
+- [x] 23-3: Arquitetura Web - Rest e Restful
+- [x] 23-4: Arquitetura de Software - Testando as Camadas
+- [x] 23-5: Projeto - Store Manager
 
 **Bloco 24: Node.js - ORM e Autenticação**
-- [ ] 24-1: ORM - Interface da aplicação com o banco de dados
-- [ ] 24-2: ORM - Associations
-- [ ] 24-3: JWT - (JSON Web Token)
-- [ ] 24-4: Testando APIs com Testes de Integração
-- [ ] 24-5: Projeto - API de Blogs
+- [x] 24-1: ORM - Interface da aplicação com o banco de dados
+- [x] 24-2: ORM - Associations
+- [x] 24-3: JWT - (JSON Web Token)
+- [x] 24-4: Testando APIs com Testes de Integração
+- [x] 24-5: Projeto - API de Blogs
 
 **Bloco 25: Deployment**
-- [ ] 25-1: Infraestrutura - Deploy com Heroku
-- [ ] 25-2: Deploy Docker & Heroku
+- [x] 25-1: Infraestrutura - Deploy com Heroku
+- [x] 25-2: Deploy Docker & Heroku
 - [ ] 25-3: Projeto - Stranger Things
 
 **Bloco 26: TypeScript**
